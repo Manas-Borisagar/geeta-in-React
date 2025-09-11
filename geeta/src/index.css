@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles from your original project, applied to the html/body.
+  We also set the default background and text colors here, which React/Tailwind 
+  will toggle with the 'dark' class.
+*/
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    @apply bg-orange-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300;
+  }
+
+  /* Custom class from your verse.html */
+  .sanskrit-text {
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-size: 1.75rem;
+    /* 28px */
+    line-height: 3rem;
+    /* 48px */
+  }
+}
